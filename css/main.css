@@ -1,3 +1,30 @@
+html{
+    font-family: sans-serif;
+}
 header{
     background: #3B5998;
+}
+
+header .logo-area{
+    color: white;
+    display: inline-block;
+}
+
+header .logo-area {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .menu, 
+header .icon-links, 
+header .icon-links .privacy, 
+header .search-area{
+    display: inline-block;
+}
+
+header .menu ul li,
+header .icon-links ul li,
+header .search-area ul li{
+    display: inline-block;
 }
