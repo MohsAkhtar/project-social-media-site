@@ -3,7 +3,7 @@
   // row won't go over this, ut if we got less than this size
   // then will fill 100% of the available space that it has
   max-width: $grid-width; // standard is 1140px but we want rem so we divide by 10
-  margin: 0 auto;
+  margin: 0 0;
 
   // do to everything but not last row (:last-child)
   &:not(:last-child) {

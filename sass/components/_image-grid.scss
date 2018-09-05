@@ -1,0 +1,15 @@
+.image-grid {
+  margin: 0;
+  position: relative;
+  text-align: center;
+
+  &__row {
+    width: 100%;
+    margin: auto;
+    line-height: 1;
+  }
+}
+.image {
+  width: 9rem;
+  height: 9rem;
+}

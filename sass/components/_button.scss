@@ -28,3 +28,12 @@
     box-shadow: 0 5px 10px rgba($black, 0.2);
   }
 }
+
+.btn-text {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $blue;
+    text-transform: uppercase;
+  }
+}
