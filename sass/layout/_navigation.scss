@@ -1,0 +1,51 @@
+.navigation {
+  background: #3b5998;
+  width: 100%;
+  position: relative;
+  &__logo-box,
+  &__menu,
+  &__menu-section,
+  &__item {
+    display: inline-block;
+  }
+
+  &__menu {
+    width: 79%;
+  }
+
+  &__logo-box {
+    width: 20%;
+  }
+
+  &__item {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 1rem;
+  }
+
+  &__item--logo {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  &__menu-section-1 {
+    padding-right: 3rem;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  &__menu-section-2 {
+    padding: 0 2rem;
+  }
+
+  &__menu-section-3 {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 2rem;
+  }
+
+  &__menu-section-4 {
+    float: right;
+  }
+}

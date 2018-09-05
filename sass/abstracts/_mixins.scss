@@ -1,0 +1,17 @@
+// append pseudo element after element to clear floats
+// stops element collapsing when their children are all floating
+@mixin clearfix {
+  &::after {
+    content: ''; // need this property or a pseudo element won't appeare on a page
+    display: table; // also need this (standard thing for clear fix)
+    clear: both; // clear both float left and float right
+  }
+}
+
+// for centering elements
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
