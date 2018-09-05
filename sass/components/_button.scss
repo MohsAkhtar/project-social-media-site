@@ -1,20 +1,30 @@
 .btn {
-  display: inline-block;
-  border-radius: $border-radius;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  font: $default-font-size;
-  background: rgba($navy, 0.8);
-  color: $white;
-  padding: 0 1rem;
-  margin: 0 1rem;
-  border: 5px solid rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
-}
+  &:link,
+  &:visited {
+    display: inline-block;
+    border-radius: $border-radius;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font: $default-font-size;
+    background: rgba($navy, 1);
+    color: $white;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
+    letter-spacing: 1px;
+    transition: all 0.3s;
+  }
 
-.btn:hover {
-  background: rgba($blue, 0.6);
-  transform: translateY(-1rem) scale(1.1);
-  box-shadow: 1rem 4rem 4rem ($black, 0.8);
+  &:hover {
+    background: rgba($blue, 0.9);
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 10px 20px rgba($black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba($black, 0.2);
+  }
 }

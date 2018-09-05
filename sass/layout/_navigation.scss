@@ -2,6 +2,7 @@
   background: $navy;
   width: 100%;
   position: relative;
+  letter-spacing: 0.4rem;
   &__logo-box,
   &__menu,
   &__menu-section,
@@ -18,14 +19,18 @@
   }
 
   &__item {
-    color: white;
+    color: $white;
     text-decoration: none;
     font-weight: 400;
     padding: 1rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: $aqua;
+    }
   }
 
   &__item--logo {
-    color: white;
+    color: $white;
     text-decoration: none;
     font-size: 2rem;
   }
@@ -33,7 +38,7 @@
   &__menu-section-1 {
     padding-right: 3rem;
     text-align: center;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba($grey-dark-1, 0.3);
   }
 
   &__menu-section-2 {
@@ -41,7 +46,7 @@
   }
 
   &__menu-section-3 {
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba($grey-dark-1, 0.3);
     padding: 0 2rem;
   }
 

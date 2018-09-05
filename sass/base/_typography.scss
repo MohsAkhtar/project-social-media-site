@@ -6,8 +6,11 @@ body {
 }
 
 .heading-primary {
-  color: $white;
+  font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.3rem;
+  font-weight: 500;
+  display: block;
+  color: $white;
+  letter-spacing: 2px; // px so small we don't really need to use rem here
+  text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
 }
