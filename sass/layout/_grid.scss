@@ -1,0 +1,56 @@
+//----GRID COLUMNS LAYOUT ----
+.row {
+  // row won't go over this, ut if we got less than this size
+  // then will fill 100% of the available space that it has
+  max-width: $grid-width; // standard is 1140px but we want rem so we divide by 10
+  margin: 0 auto;
+
+  // do to everything but not last row (:last-child)
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix; // stops element collapsing when row children are all floats
+
+  // attribute selector (^ means starts with
+  [class^='col'] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc(
+      (100% - 2 * #{$gutter-horizontal}) / 3
+    ); // 2* because there is two gutters
+  }
+
+  .col-2-of-3 {
+    // width of 2 of the columns + gutter width
+    width: calc(
+      2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+    );
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+  }
+
+  .col-2-of-4 {
+    width: calc(
+      2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal}
+    );
+  }
+
+  .col-3-of-4 {
+    width: calc(
+      3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + (2 * #{$gutter-horizontal})
+    );
+  }
+}

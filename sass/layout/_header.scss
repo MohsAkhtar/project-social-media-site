@@ -1,0 +1,72 @@
+header {
+  background: #3b5998;
+  padding: 15px;
+}
+
+header .logo-area,
+header .menu,
+header .icon-links,
+header .icon-links .privacy,
+header .search-area {
+  display: inline-block;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+header .logo-area {
+  width: 20%;
+}
+
+header .logo-area a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header .menu {
+  width: 20%;
+  padding-right: 30px;
+  text-align: right;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header .menu a {
+  margin-left: 20px;
+}
+
+header .icon-links {
+  width: 20%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+header .icon-links .quick-options .privacy {
+  margin-left: 30px;
+  padding-left: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+header .icon-links ul li {
+  margin-right: 10px;
+}
+
+header .search-area {
+  width: 40%;
+  text-align: right;
+}
+
+header .search-area .fas {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header .menu ul li,
+header .icon-links ul li,
+header .search-area ul li {
+  display: inline-block;
+}

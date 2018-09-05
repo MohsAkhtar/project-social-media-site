@@ -1,0 +1,110 @@
+/*---Buttons---*/
+.btn {
+  // this '&' adds style to <button> element too
+  // as 'link' and 'visited' are for <a> elements
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s; /* transition on all properties */
+    position: relative;
+    font-size: $default-font-size;
+
+    // Change for <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; /* trick for fading something out */
+    }
+  }
+
+  /*active is in relation to link not hover */
+  &:active,
+  &:focus {
+    // To get of outline on <button> we set 'focus' same as 'active'
+    outline: none;
+    transform: translateY(
+      -1px /* This gives nice effect of pussing button 
+          down when clicked */
+    );
+    box-shadow: 0 5px 10px rgba($color-black, 0.2); /* Shadow is reduced when clicked */
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  /* add element that looks exactly like btn we have
+    but we put it behind the button. When we hover out
+    of the element the btn basically returns behind the
+    element.*/
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary-dark;
+    display: inline-block; // so we can apply border box model properties like padding margin etc.
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary; // doing this so we can add our own line at the bottom which has padding
+    padding: 3px;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    transform: translateY(-2px);
+  }
+
+  // active means when clicked
+  &:active {
+    box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
+    transform: translateY(0);
+  }
+}
