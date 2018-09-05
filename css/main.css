@@ -318,7 +318,9 @@ body {
 
 .heading-primary {
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.3rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -344,16 +346,18 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-size: 12px;
-  margin-right: 3%;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.3);
-  color: white;
+  font: 1.6rem;
+  background: rgba(0, 31, 63, 0.8);
+  color: #fff;
+  padding: 0 1rem;
+  margin: 0 1rem;
   border: 5px solid rgba(0, 0, 0, 0.3);
-  transition: background 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
 
 .btn:hover {
-  background: rgba(12, 128, 173, 0.6); }
+  background: rgba(0, 116, 217, 0.6);
+  transform: translateY(-1rem) scale(1.1);
+  box-shadow: 1rem 4rem 4rem #111, 0.8; }
 
 .row {
   max-width: 114rem;
@@ -382,7 +386,7 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
 
 .navigation {
-  background: #3b5998;
+  background: #001f3f;
   width: 100%;
   position: relative; }
   .navigation__logo-box, .navigation__menu, .navigation__menu-section, .navigation__item {
@@ -412,9 +416,6 @@ body {
   .navigation__menu-section-4 {
     float: right; }
 
-/*
-///////////////////////////////////////
-*/
 .section-top {
   padding: 200px 15px 90px 15px;
   background: url(../images/bg.jpg) no-repeat center center;

@@ -1,23 +1,33 @@
-// COLOURS
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+//
+// Some Useful color Vars via http://clrs.cc/
+//
 
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
+// Cool
+$aqua: #7fdbff;
+$blue: #0074d9;
+$navy: #001f3f;
+$olive: #3d9970;
+$lime: #01ff70;
 
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+// Warm
+$yellow: #ffdc00;
+$orange: #ff851b;
+$red: #ff4136;
+$fuchsia: #f012be;
+$maroon: #85144b;
 
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+// Gray Scale
+$white: #fff;
+$silver: #ddd;
+$gray: #aaa;
+$black: #111;
 
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
+$grey-light-1: #f7f7f7;
+$grey-light-2: #eee;
 
-$color-white: #fff;
-$color-black: #000;
+$grey-dark-1: #777;
+$grey-dark-2: #999;
+$grey-dark-3: #333;
 
 //FONT
 $default-font-size: 1.6rem;
